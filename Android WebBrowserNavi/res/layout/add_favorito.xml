@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btcancelar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Agregar Favorito"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="62dp"
+        android:text="Nombre"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/btcancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/button1"
+        android:background="#1C1C1C"
+        android:textColor="#ffffff"
+        android:drawableRight="@drawable/x"
+        android:text="  Cerrar  " />
+
+    <TextView
+        android:id="@+id/TextView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txt_nombre_fav"
+        android:layout_below="@+id/txt_nombre_fav"
+        android:layout_marginTop="20dp"
+        android:text="Url"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/txt_nombre_fav"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/textView1"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/textView3"
+        android:background="#000000"
+        android:singleLine="true" 
+        android:ems="10"
+        android:textColor="#ffffff" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txt_nombre_fav"
+        android:layout_alignBottom="@+id/txt_nombre_fav"
+        android:layout_toLeftOf="@+id/textView2"
+        android:text=":"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/txtlink2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/TextView01"
+        android:layout_alignRight="@+id/txt_nombre_fav"
+        android:layout_below="@+id/TextView01"
+        android:background="#000000"
+        android:singleLine="true" 
+        android:ems="10"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtlink2"
+        android:layout_alignBottom="@+id/txtlink2"
+        android:layout_alignLeft="@+id/txtlink2"
+        android:text=":"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btlisto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtlink2"
+        android:layout_marginTop="32dp"
+        android:layout_toRightOf="@+id/TextView01"
+        android:background="#151515"
+        android:text="  Agregar   "
+        android:textColor="#ffffff" />
+
+</RelativeLayout>
